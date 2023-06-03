@@ -37,27 +37,6 @@
   </entry>
   
   <entry>
-    <title>2022-10-01-LeetCode_142</title>
-    <link href="https://idealine9.github.io/posts/426cf478/"/>
-    <id>https://idealine9.github.io/posts/426cf478/</id>
-    <published>2023-06-03T09:13:49.849Z</published>
-    <updated>2022-12-23T07:58:16.603Z</updated>
-    
-    <content type="html"><![CDATA[<p>原题链接：<a href="https://leetcode.cn/problems/linked-list-cycle-ii/">https://leetcode.cn/problems/linked-list-cycle-ii/</a></p><h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给定链表头结点，返回链表开始入环的结点，若无环则返回null。</p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><blockquote><p>快慢双指针，快指针每次走2步，慢指针每次走1步，寻找步数中的数学规律。</p></blockquote><h3 id="数学规律与思路"><a href="#数学规律与思路" class="headerlink" title="数学规律与思路"></a>数学规律与思路</h3><p>设到达入环结点需要a步，快慢指针在环中相遇的结点距离入环结点为b步，相遇结点还需向后走c步再到达入环结点</p><p>设快慢指针相遇时，快指针已经绕环走了n圈，而慢指针还没有第一次走完环</p><p>这时慢指针走了a+b步，快指针走了a+b+n(b+c)步，即a+(n+1)b+nc步</p><p>由于快指针走的步数是慢指针的2倍，有a+(n+1)b+nc&#x3D;2(a+b)等式成立</p><p>整理后得a&#x3D;c+(n-1)(b+c)</p><p>由于绕环多少圈无所谓，b+c为绕一遍环的步数，所以(n-1)(b+c)可以不用看，即a&#x3D;c</p><p>这时候只需再创建两个指针，一个指向头结点，另外一个指向相遇结点，同时走，由于a&#x3D;c的成立，两指针相遇的点即为入环结点。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        ListNode *fast = head;                         <span class="comment">//定义快慢指针</span></span><br><span class="line">        ListNode *slow = head;</span><br><span class="line">        <span class="keyword">while</span> (fast != <span class="literal">NULL</span> &amp;&amp; fast-&gt;next != <span class="literal">NULL</span>) &#123;   <span class="comment">//链表有环的情况</span></span><br><span class="line">            slow = slow-&gt;next;                         <span class="comment">//慢指针一次走一步</span></span><br><span class="line">            fast = fast-&gt;next-&gt;next;                   <span class="comment">//快指针一次走两步</span></span><br><span class="line">            <span class="keyword">if</span> (slow == fast) &#123;                        <span class="comment">//快慢指针相遇</span></span><br><span class="line">                ListNode *p = head;                    <span class="comment">//再定义两个同走指针</span></span><br><span class="line">                ListNode *q = fast;</span><br><span class="line">                <span class="keyword">while</span> (p != q) &#123;                       <span class="comment">//判断直到两指针相同，即为入环结点</span></span><br><span class="line">                    p = p-&gt;next;</span><br><span class="line">                    q = q-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> p;                              <span class="comment">//返回入环结点,p,q均可</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;                                   <span class="comment">//链表无环的情况，返回null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;原题链接：&lt;a href=&quot;https://leetcode.cn/problems/linked-list-cycle-ii/&quot;&gt;https://leetcode.cn/problems/linked-list-cycle-ii/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目大意</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>2022-9-28-LeetCode_206</title>
     <link href="https://idealine9.github.io/posts/d8d60d82/"/>
     <id>https://idealine9.github.io/posts/d8d60d82/</id>
@@ -92,6 +71,27 @@
       
     <summary type="html">&lt;p&gt;原题链接：&lt;a href=&quot;https://leetcode.cn/problems/assign-cookies/&quot;&gt;https://leetcode.cn/problems/assign-cookies/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目大意&quot;&gt;&lt;a href=&quot;#</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2022-10-01-LeetCode_142</title>
+    <link href="https://idealine9.github.io/posts/426cf478/"/>
+    <id>https://idealine9.github.io/posts/426cf478/</id>
+    <published>2023-06-03T09:13:49.849Z</published>
+    <updated>2022-12-23T07:58:16.603Z</updated>
+    
+    <content type="html"><![CDATA[<p>原题链接：<a href="https://leetcode.cn/problems/linked-list-cycle-ii/">https://leetcode.cn/problems/linked-list-cycle-ii/</a></p><h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给定链表头结点，返回链表开始入环的结点，若无环则返回null。</p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><blockquote><p>快慢双指针，快指针每次走2步，慢指针每次走1步，寻找步数中的数学规律。</p></blockquote><h3 id="数学规律与思路"><a href="#数学规律与思路" class="headerlink" title="数学规律与思路"></a>数学规律与思路</h3><p>设到达入环结点需要a步，快慢指针在环中相遇的结点距离入环结点为b步，相遇结点还需向后走c步再到达入环结点</p><p>设快慢指针相遇时，快指针已经绕环走了n圈，而慢指针还没有第一次走完环</p><p>这时慢指针走了a+b步，快指针走了a+b+n(b+c)步，即a+(n+1)b+nc步</p><p>由于快指针走的步数是慢指针的2倍，有a+(n+1)b+nc&#x3D;2(a+b)等式成立</p><p>整理后得a&#x3D;c+(n-1)(b+c)</p><p>由于绕环多少圈无所谓，b+c为绕一遍环的步数，所以(n-1)(b+c)可以不用看，即a&#x3D;c</p><p>这时候只需再创建两个指针，一个指向头结点，另外一个指向相遇结点，同时走，由于a&#x3D;c的成立，两指针相遇的点即为入环结点。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode *<span class="title">detectCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        ListNode *fast = head;                         <span class="comment">//定义快慢指针</span></span><br><span class="line">        ListNode *slow = head;</span><br><span class="line">        <span class="keyword">while</span> (fast != <span class="literal">NULL</span> &amp;&amp; fast-&gt;next != <span class="literal">NULL</span>) &#123;   <span class="comment">//链表有环的情况</span></span><br><span class="line">            slow = slow-&gt;next;                         <span class="comment">//慢指针一次走一步</span></span><br><span class="line">            fast = fast-&gt;next-&gt;next;                   <span class="comment">//快指针一次走两步</span></span><br><span class="line">            <span class="keyword">if</span> (slow == fast) &#123;                        <span class="comment">//快慢指针相遇</span></span><br><span class="line">                ListNode *p = head;                    <span class="comment">//再定义两个同走指针</span></span><br><span class="line">                ListNode *q = fast;</span><br><span class="line">                <span class="keyword">while</span> (p != q) &#123;                       <span class="comment">//判断直到两指针相同，即为入环结点</span></span><br><span class="line">                    p = p-&gt;next;</span><br><span class="line">                    q = q-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> p;                              <span class="comment">//返回入环结点,p,q均可</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;                                   <span class="comment">//链表无环的情况，返回null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;原题链接：&lt;a href=&quot;https://leetcode.cn/problems/linked-list-cycle-ii/&quot;&gt;https://leetcode.cn/problems/linked-list-cycle-ii/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目大意</summary>
       
     
     
