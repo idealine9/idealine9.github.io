@@ -1,7 +1,7 @@
-https://idealine9.github.io/posts/fb201a71/
-https://idealine9.github.io/posts/22b656dc/
-https://idealine9.github.io/posts/368889b9/
-https://idealine9.github.io/posts/5b2b1a5a/
-https://idealine9.github.io/posts/426cf478/
-https://idealine9.github.io/posts/d8d60d82/
+https://idealine9.github.io/tags/index.html
+https://idealine9.github.io/categories/index.html
+https://idealine9.github.io/posts/LeetCode_59/
+https://idealine9.github.io/posts/LeetCode_445/
 https://idealine9.github.io/
+https://idealine9.github.io/tags/%E7%AE%97%E6%B3%95/
+https://idealine9.github.io/categories/LeetCode%E9%A2%98%E8%A7%A3/
