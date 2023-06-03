@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Kimilancet&#39;s celeste</title>
+  <title></title>
   
-  <subtitle>蔚蓝色的山顶泛着光</subtitle>
-  <link href="https://kimilancet.github.io/atom.xml" rel="self"/>
   
-  <link href="https://kimilancet.github.io/"/>
+  <link href="https://idealine9.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://idealine9.github.io/"/>
   <updated>2022-12-23T07:58:16.603Z</updated>
-  <id>https://kimilancet.github.io/</id>
+  <id>https://idealine9.github.io/</id>
   
   <author>
     <name>Kimilancet</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>2022-10-01-LeetCode_142</title>
-    <link href="https://kimilancet.github.io/posts/426cf478/"/>
-    <id>https://kimilancet.github.io/posts/426cf478/</id>
+    <link href="https://idealine9.github.io/posts/426cf478/"/>
+    <id>https://idealine9.github.io/posts/426cf478/</id>
     <published>2023-06-03T09:13:49.849Z</published>
     <updated>2022-12-23T07:58:16.603Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>2022-9-28-LeetCode_206</title>
-    <link href="https://kimilancet.github.io/posts/d8d60d82/"/>
-    <id>https://kimilancet.github.io/posts/d8d60d82/</id>
+    <link href="https://idealine9.github.io/posts/d8d60d82/"/>
+    <id>https://idealine9.github.io/posts/d8d60d82/</id>
     <published>2023-06-03T09:13:49.849Z</published>
     <updated>2022-12-23T07:58:16.601Z</updated>
     
@@ -60,8 +60,8 @@
   
   <entry>
     <title>2022-10-03-LeetCode_455</title>
-    <link href="https://kimilancet.github.io/posts/22b656dc/"/>
-    <id>https://kimilancet.github.io/posts/22b656dc/</id>
+    <link href="https://idealine9.github.io/posts/22b656dc/"/>
+    <id>https://idealine9.github.io/posts/22b656dc/</id>
     <published>2023-06-03T09:13:49.849Z</published>
     <updated>2022-12-23T07:58:16.608Z</updated>
     
@@ -81,8 +81,8 @@
   
   <entry>
     <title>2022-9-29-LeetCode_19</title>
-    <link href="https://kimilancet.github.io/posts/5b2b1a5a/"/>
-    <id>https://kimilancet.github.io/posts/5b2b1a5a/</id>
+    <link href="https://idealine9.github.io/posts/5b2b1a5a/"/>
+    <id>https://idealine9.github.io/posts/5b2b1a5a/</id>
     <published>2023-06-03T09:13:49.849Z</published>
     <updated>2022-12-23T07:58:16.605Z</updated>
     
@@ -101,8 +101,8 @@
   
   <entry>
     <title>2022-10-13-LeetCode_59</title>
-    <link href="https://kimilancet.github.io/posts/368889b9/"/>
-    <id>https://kimilancet.github.io/posts/368889b9/</id>
+    <link href="https://idealine9.github.io/posts/368889b9/"/>
+    <id>https://idealine9.github.io/posts/368889b9/</id>
     <published>2023-06-03T09:13:49.849Z</published>
     <updated>2022-12-23T07:58:16.606Z</updated>
     
@@ -122,8 +122,8 @@
   
   <entry>
     <title>开始</title>
-    <link href="https://kimilancet.github.io/posts/fb201a71/"/>
-    <id>https://kimilancet.github.io/posts/fb201a71/</id>
+    <link href="https://idealine9.github.io/posts/fb201a71/"/>
+    <id>https://idealine9.github.io/posts/fb201a71/</id>
     <published>2023-06-03T08:58:51.855Z</published>
     <updated>2023-06-03T09:14:38.945Z</updated>
     
