@@ -21,8 +21,8 @@ body {
   min-height: 100%;
   background: #fff;
   color: #4c4948;
-  font-size: 16px;
-  font-family: Cambriaz, Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-family: Cambria, Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 2;
 }
 *::-webkit-scrollbar {
@@ -173,7 +173,7 @@ table td {
   padding-top: 1.4rem;
   background: #292d3e;
   color: #a6accd;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
 }
 figure.highlight {
@@ -194,7 +194,7 @@ blockquote {
   background: rgba(27,31,35,0.05);
   color: #1f2d3d;
   word-wrap: break-word;
-  font-size: 16px;
+  font-size: 20px;
 }
 .article-container pre code {
   padding: 0;
@@ -1803,6 +1803,6 @@ a.fancybox:focus {
   background: #00c4b6;
 }
 @font-face {
-  font-family: Cambriaz;
-  src: url("/font/cambriaz.ttf");
+  font-family: Cambria;
+  src: url("/font/cambria.ttc");
 }
