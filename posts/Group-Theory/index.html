@@ -9,39 +9,40 @@
   },
   hexoVersion: '6.3.0'
 } </script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="ideal recode" type="application/atom+xml">
-</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="false"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#vertex-degrees"><span class="toc-number">1.</span> <span class="toc-text">10.1 Vertex Degrees</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#walks-and-paths"><span class="toc-number">2.</span> <span class="toc-text">10.2 Walks and Paths</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#adjacency-matrices"><span class="toc-number">3.</span> <span class="toc-text">10.3 Adjacency Matrices</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#shortest-path"><span class="toc-number">3.1.</span> <span class="toc-text">10.3.1 Shortest Path</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#walks-relations"><span class="toc-number">4.</span> <span class="toc-text">10.4 Walks Relations</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s2.loli.net/2023/06/03/uk8HgNJmrStPjaQ.jpg"></div><div class="author-info__name text-center">idealine9</div><div class="author-info__description text-center">INTP,数学,计算机底层爱好者 独立游戏玩家,记录想法更新.</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">3</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">2</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">2</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://s2.loli.net/2022/11/13/43LrdJIcaqDRPsk.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">ideal recode</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">Group theory</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2023-08-22</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/">数学笔记</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">657</span><span class="post-meta__separator">|</span><span>阅读时长: 4 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>MCS的一点阅读笔记 <span id="more"></span></p>
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="false"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#vertex-degrees"><span class="toc-number">1.</span> <span class="toc-text">10.1 Vertex Degrees</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#walks-and-paths"><span class="toc-number">2.</span> <span class="toc-text">10.2 Walks and Paths</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#adjacency-matrices"><span class="toc-number">3.</span> <span class="toc-text">10.3 Adjacency Matrices</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#shortest-path"><span class="toc-number">3.1.</span> <span class="toc-text">10.3.1 Shortest Path</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#walks-relations"><span class="toc-number">4.</span> <span class="toc-text">10.4 Walks Relations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#directed-acyclic-graphsdag-scheduling"><span class="toc-number">5.</span> <span class="toc-text">10.5 Directed Acyclic
+Graphs(DAG) &amp; Scheduling</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s2.loli.net/2023/06/03/uk8HgNJmrStPjaQ.jpg"></div><div class="author-info__name text-center">idealine9</div><div class="author-info__description text-center">INTP,数学,计算机底层爱好者 独立游戏玩家,记录想法更新.</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">3</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">2</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">2</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://s2.loli.net/2022/11/13/43LrdJIcaqDRPsk.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">ideal recode</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">Group theory</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2023-08-22</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/">数学笔记</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">755</span><span class="post-meta__separator">|</span><span>阅读时长: 4 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>MCS的一点阅读笔记 <span id="more"></span></p>
 <h3 id="vertex-degrees">10.1 Vertex Degrees</h3>
-<p>The <span class="math inline">\(in {-} degree \ (d^-)\)</span> is the
-number of arrows coming into it ( <em>number of times the vertex is
-pointed</em> ),</p>
-<p>similarly, the <span class="math inline">\(out{-}degree \
-(d^+)\)</span> is the number of arrows out of it ( <em>number of points
-to other vertices</em> ).</p>
-<p>If <span class="math inline">\(G\)</span> is a digraph and <span
-class="math inline">\(v \in V(G)\)</span> , then <span
-class="math display">\[
+<p>The <strong><em><span class="math inline">\(in {-} degree \
+(d^-)\)</span></em></strong> is the number of arrows coming into it (
+<em>number of times the vertex is pointed</em> ),</p>
+<p>similarly, the <strong><em><span class="math inline">\(out{-}degree \
+(d^+)\)</span></em></strong> is the number of arrows out of it (
+<em>number of points to other vertices</em> ).</p>
+<p>If <strong><span class="math inline">\(G\)</span></strong> is a
+<strong>digraph</strong> and <span class="math inline">\(v \in
+V(G)\)</span> , then <span class="math display">\[
 \sum_{v \ \in \ V(G)} d^+(v) = \sum_{v \ \in \ V(G)} d^-(v)
-\]</span> and both sums are equal to <span class="math inline">\(\vert
-E(G) \vert\)</span></p>
+\]</span> and both sums are equal to <strong><em><span
+class="math inline">\(\vert E(G) \vert\)</span></em></strong></p>
 <h3 id="walks-and-paths">10.2 Walks and Paths</h3>
 <blockquote>
 <p><strong>Definition</strong>.</p>
-<p><strong><span class="math inline">\(walk\)</span></strong> : A <span
-class="math inline">\(walk\)</span> in a digraph is an alternating
-sequence of vertices and edges that begins with a vertex and ends with a
-vertex.</p>
+<p><strong><span class="math inline">\(walk\)</span></strong> : A
+<strong><span class="math inline">\(walk\)</span></strong> in a digraph
+is an alternating sequence of vertices and edges that begins with a
+vertex and ends with a vertex.</p>
 <p><strong><span class="math inline">\(closed \ walk\)</span></strong> :
-A <span class="math inline">\(closed \ walk\)</span> is a <span
-class="math inline">\(walk\)</span> that begins and ends at the same
-vertex.</p>
+A <strong><span class="math inline">\(closed \ walk\)</span></strong> is
+a <span class="math inline">\(walk\)</span> that begins and ends at the
+same vertex.</p>
 <p><strong><span class="math inline">\(path\)</span></strong> : The
-<span class="math inline">\(walk\)</span> is a <span
-class="math inline">\(path\)</span> iff all the vertices are
-different.</p>
-<p><strong><span class="math inline">\(cycle\)</span></strong> : A <span
-class="math inline">\(cycle\)</span> is a positive length <span
-class="math inline">\(path\)</span> and begins and ends at the same
-vertex.</p>
+<span class="math inline">\(walk\)</span> is a <strong><span
+class="math inline">\(path\)</span></strong> if and only if all the
+vertices are different.</p>
+<p><strong><span class="math inline">\(cycle\)</span></strong> : A
+<strong><span class="math inline">\(cycle\)</span></strong> is a
+positive length <span class="math inline">\(path\)</span> and begins and
+ends at the same vertex.</p>
 </blockquote>
 <blockquote>
 <p><strong>Lemma</strong>. [ The Triangle Inequality ]</p>
@@ -50,20 +51,22 @@ vertex.</p>
 dist(u,v) \le dist(u,x)+dist(x,v)
 \]</span></p>
 <p>for all vertices <span class="math inline">\(u,\ v, \ x\)</span> with
-equality holding if and only if x is on a shortest path from <span
-class="math inline">\(u\)</span> to <span
-class="math inline">\(v\)</span>.</p>
+equality holding if and only if <span class="math inline">\(x\)</span>
+is on a shortest path from <span class="math inline">\(u\)</span> to
+<span class="math inline">\(v\)</span>.</p>
 <h3 id="adjacency-matrices">10.3 Adjacency Matrices</h3>
-<p>If a graph <span class="math inline">\(G\)</span> has <span
-class="math inline">\(n\)</span> vertices <span
-class="math inline">\(v_0, \ v_1 \ ... \ v_{n-1}\)</span> , a useful way
-to represent it is with an <span class="math inline">\(n \times
-n\)</span> matrix of zeros and ones called its <strong><em>adjacency
+<p>If a graph <strong><span class="math inline">\(G\)</span></strong>
+has <strong><span class="math inline">\(n\)</span></strong> vertices
+<strong><span class="math inline">\(v_0, \ v_1 \ ... \
+v_{n-1}\)</span></strong> , a useful way to represent it is with an
+<strong><span class="math inline">\(n \times n\)</span></strong> matrix
+of zeros and ones called its <strong><em>adjacency
 matrices</em></strong> <span class="math inline">\(A_G\)</span>.</p>
-<p><span class="math inline">\((A_G)_{ij}\)</span> is <span
-class="math inline">\(1\)</span> if there is an edge from vertex <span
-class="math inline">\(v_i\)</span> to vertex <span
-class="math inline">\(v_j\)</span> and <span
+<p><strong><span class="math inline">\((A_G)_{ij}\)</span></strong> is
+<span class="math inline">\(1\)</span> if there is an edge from vertex
+<strong><em><span class="math inline">\(v_i\)</span></em></strong> to
+vertex <strong><em><span
+class="math inline">\(v_j\)</span></em></strong> and <span
 class="math inline">\(0\)</span> otherwise. <span
 class="math display">\[
 (A_G)_{ij}=
@@ -73,8 +76,9 @@ class="math display">\[
 0 &amp; otherwise,
 \end{cases}
 \]</span></p>
-<p>Let <span class="math inline">\(H\)</span> be the 4-node graph. Its
-adjacency matrix <span class="math inline">\(A_H\)</span> is the 4 <span
+<p>Let <strong><span class="math inline">\(H\)</span></strong> be the
+4-node graph. Its <strong><em>adjacency matrix</em></strong> <span
+class="math inline">\(A_H\)</span> is the 4 <span
 class="math inline">\(\times\)</span> 4 matrix : <span
 class="math display">\[
 A_H \ = \ \ \
@@ -85,11 +89,12 @@ b &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
 c &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
 d &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
 \end{array}
-\]</span> We can use matrix powers to count numbers of walks between
-vertices. For example, if we want to know the walk with a length of
-<span class="math inline">\(2\)</span>, we could have read these counts
-from the entires in the matrix <span
-class="math inline">\((A_H)^2\)</span> : <span class="math display">\[
+\]</span> We can use <strong>matrix powers</strong> to count numbers of
+walks between vertices. For example, if we want to know the walk with a
+length of <span class="math inline">\(2\)</span>, we could have read
+these counts from the entires in the matrix <strong><span
+class="math inline">\((A_H)^2\)</span></strong> : <span
+class="math display">\[
 (A_H)^2 \ = \ \ \
 \begin{array}{}
 &amp; a &amp; b &amp; c &amp; d \\
@@ -98,10 +103,11 @@ b &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
 c &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
 d &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
 \end{array}
-\]</span> More generally, the matrix <span
-class="math inline">\((A_G)^k\)</span> provides a count of the number of
-length <span class="math inline">\(k\)</span> walks between vertices in
-any digraph <span class="math inline">\(G\)</span>.</p>
+\]</span> More generally, the matrix <strong><span
+class="math inline">\((A_G)^k\)</span></strong> provides a count of the
+number of <strong>length <span class="math inline">\(k\)</span>
+walks</strong> between vertices in any digraph <strong><span
+class="math inline">\(G\)</span></strong>.</p>
 <blockquote>
 <p><strong>Theorem</strong>. For a digraph <span
 class="math inline">\(G\)</span>, if <span
@@ -118,31 +124,60 @@ class="math inline">\((A_G)^k\)</span> , for all <span
 class="math inline">\(k\in\)</span> <span
 class="math inline">\(\mathbb{N}\)</span>.</p>
 </blockquote>
-<p>In other words, you can determine the number of <em>length <span
-class="math inline">\(k\)</span> walks</em> between any pair of vertices
-simply by computing the <span class="math inline">\(k\)</span> th power
-of the <em>adjacency matrix</em>.</p>
+<p>In other words, you can determine the number of <strong><em>length
+<span class="math inline">\(k\)</span> walks</em></strong> between any
+pair of vertices simply by <strong>computing the <span
+class="math inline">\(k\)</span> th power</strong> of the
+<strong><em>adjacency matrix</em></strong>.</p>
 <h4 id="shortest-path">10.3.1 Shortest Path</h4>
-<p>To find the lengths of all the shortest paths in an <em>n-vertex</em>
-graph <span class="math inline">\(G\)</span> is to compute the
-successive powers of <span class="math inline">\(A_G\)</span> one by one
-up to the <span class="math inline">\(n-1\)</span> times, watching for
-the first power at which each entry becomes positive.</p>
+<p>To find the lengths of all the <strong>shortest paths</strong> in an
+<em>n-vertex</em> graph <span class="math inline">\(G\)</span> is to
+compute the successive powers of <span
+class="math inline">\(A_G\)</span> one by one <strong>up to the <span
+class="math inline">\(n-1\)</span> times</strong>, watching for the
+<strong>first power</strong> at which each entry becomes
+<strong>positive</strong>.</p>
 <p>The distance from <span class="math inline">\(u\)</span> to <span
 class="math inline">\(v\)</span> will be the smallest value <span
 class="math inline">\(k\)</span> for which <span
 class="math inline">\((A_G)^K_{uv}\)</span> is nonzero, and if there is
 a shortest path, its length will be <span class="math inline">\(\le
-n-1\)</span> . The methods apply as well to <em>weighted
-graphs</em>.</p>
+n-1\)</span> . The methods apply as well to <strong><em>weighted
+graphs</em></strong>.</p>
 <h3 id="walks-relations">10.4 Walks Relations</h3>
 <p>For any digraph <span class="math inline">\(G\)</span>, a binary
-relation <span class="math inline">\(G^*\)</span>, called the walk
-relation on <span class="math inline">\(V(G)\)</span>, where <span
-class="math display">\[
+relation <strong><span class="math inline">\(G^*\)</span></strong>,
+called the walk relation on <span class="math inline">\(V(G)\)</span>,
+where <span class="math display">\[
 u \ G^* \ v ::= \text{there is a walk in $G$ from $u$ to $v$}
 \]</span></p>
-</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">idealine9</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://idealine9.github.io/posts/Group-Theory/">https://idealine9.github.io/posts/Group-Theory/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://idealine9.github.io">ideal recode</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E5%AD%A6/">数学</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/posts/LeetCode_445/"><span>LeetCode_455</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(https://s2.loli.net/2022/11/13/43LrdJIcaqDRPsk.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2021 - 2023 By idealine9</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+<h3 id="directed-acyclic-graphsdag-scheduling">10.5 Directed Acyclic
+Graphs(DAG) &amp; Scheduling</h3>
+<blockquote>
+<p><strong>Definition</strong>. A <em><strong>directed acyclic</strong>
+graph</em> (DAG) is a directed graph with no cycles.</p>
+</blockquote>
+<blockquote>
+<p><strong>Definition</strong>. A <strong><em>topological
+sort</em></strong> of a <strong>finite</strong> DAG is a list of all the
+vertices such that each vertex <span class="math inline">\(v\)</span>
+appears earlier in the list than every other vertex reachable form <span
+class="math inline">\(v\)</span>.</p>
+</blockquote>
+<blockquote>
+<p><strong>Definition</strong>.</p>
+<ol type="1">
+<li>A vertex <span class="math inline">\(v\)</span> of a DAG <span
+class="math inline">\(G\)</span> is <strong><em>minimum</em></strong> if
+and only if every other vertex is reachable from <span
+class="math inline">\(v\)</span>.</li>
+<li>A vertex <span class="math inline">\(v\)</span> of a DAG <span
+class="math inline">\(G\)</span> is <strong><em>minimal</em></strong> if
+and only if <span class="math inline">\(v\)</span> is not reachable from
+any other vertex.</li>
+</ol>
+</blockquote>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">idealine9</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://idealine9.github.io/posts/Group-Theory/">https://idealine9.github.io/posts/Group-Theory/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://idealine9.github.io">ideal recode</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E5%AD%A6/">数学</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/posts/LeetCode_59/"><span>LeetCode_59</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(https://s2.loli.net/2022/11/13/43LrdJIcaqDRPsk.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2021 - 2023 By idealine9</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
   tex2jax: {
     inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
     processEscapes: true,
