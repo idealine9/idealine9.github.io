@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>ideal recode</title>
+  <title>记录每一次的新想法</title>
   
-  <subtitle>We just skip that proof.</subtitle>
+  <subtitle>My wish is to see you, even across the world.</subtitle>
   <link href="https://idealine9.github.io/atom.xml" rel="self"/>
   
   <link href="https://idealine9.github.io/"/>
@@ -38,28 +38,6 @@
   </entry>
   
   <entry>
-    <title>LeetCode_455</title>
-    <link href="https://idealine9.github.io/posts/LeetCode_445/"/>
-    <id>https://idealine9.github.io/posts/LeetCode_445/</id>
-    <published>2023-06-03T11:18:24.452Z</published>
-    <updated>2023-06-04T02:43:42.902Z</updated>
-    
-    <content type="html"><![CDATA[<p>LeetCode_455.分发饼干原题链接：https://leetcode.cn/problems/assign-cookies/ <span id="more"></span></p><h2 id="题目大意">题目大意</h2><p>数组g中有i个元素，每个元素的大小g[i]，数组s中有j个元素，每个元素的大小为s[j]，若s[j]&gt;=g[i]，则满足数+1，求最大满足数。</p><h2 id="思路">思路</h2><blockquote><p>由于题目不需要考虑饼干是否存在浪费，故可以采用贪心的思路，从最小开始比较。</p></blockquote><h3 id="具体思路">具体思路</h3><p>将数组g和数组s都从大到小排好序，都从最小开始，逐个比较。</p><p>若数组s的该元素小于数组g的该元素，则找数组s的下一个元素再比较，</p><p>若数组s的该元素大于等于数组g的该元素，则两数组索引都+1，以上述同样的方法比较接下来的元素大小，满足数+1，返回满足数。</p><h2 id="代码">代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">findContentChildren</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;g, vector&lt;<span class="type">int</span>&gt; &amp;s)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(g.<span class="built_in">begin</span>(), g.<span class="built_in">end</span>());                             <span class="comment">//数组g，s排序</span></span><br><span class="line">        <span class="built_in">sort</span>(s.<span class="built_in">begin</span>(), s.<span class="built_in">end</span>());</span><br><span class="line">        <span class="type">int</span> j = <span class="number">0</span>, cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); i++) &#123;                  </span><br><span class="line">            <span class="keyword">if</span> (j &lt; g.<span class="built_in">size</span>() &amp;&amp; g[j] &lt;= s[i]) &#123;               <span class="comment">//这里其实cnt可以代替j工作</span></span><br><span class="line">                j++;                                          <span class="comment">//为了与思路对应就加了j变量</span></span><br><span class="line">                cnt++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;LeetCode_455.分发饼干
-原题链接：https://leetcode.cn/problems/assign-cookies/</summary>
-    
-    
-    
-    <category term="LeetCode题解" scheme="https://idealine9.github.io/categories/LeetCode%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="算法" scheme="https://idealine9.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>LeetCode_59</title>
     <link href="https://idealine9.github.io/posts/LeetCode_59/"/>
     <id>https://idealine9.github.io/posts/LeetCode_59/</id>
@@ -71,6 +49,28 @@
     
     <summary type="html">&lt;p&gt;LeetCode_59.螺旋矩阵II 数学题,找数学规律
 原题链接：https://leetcode.cn/problems/spiral-matrix-ii/</summary>
+    
+    
+    
+    <category term="LeetCode题解" scheme="https://idealine9.github.io/categories/LeetCode%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="算法" scheme="https://idealine9.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode_455</title>
+    <link href="https://idealine9.github.io/posts/LeetCode_445/"/>
+    <id>https://idealine9.github.io/posts/LeetCode_445/</id>
+    <published>2023-06-03T11:18:24.452Z</published>
+    <updated>2023-06-04T02:43:42.902Z</updated>
+    
+    <content type="html"><![CDATA[<p>LeetCode_455.分发饼干原题链接：https://leetcode.cn/problems/assign-cookies/ <span id="more"></span></p><h2 id="题目大意">题目大意</h2><p>数组g中有i个元素，每个元素的大小g[i]，数组s中有j个元素，每个元素的大小为s[j]，若s[j]&gt;=g[i]，则满足数+1，求最大满足数。</p><h2 id="思路">思路</h2><blockquote><p>由于题目不需要考虑饼干是否存在浪费，故可以采用贪心的思路，从最小开始比较。</p></blockquote><h3 id="具体思路">具体思路</h3><p>将数组g和数组s都从大到小排好序，都从最小开始，逐个比较。</p><p>若数组s的该元素小于数组g的该元素，则找数组s的下一个元素再比较，</p><p>若数组s的该元素大于等于数组g的该元素，则两数组索引都+1，以上述同样的方法比较接下来的元素大小，满足数+1，返回满足数。</p><h2 id="代码">代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">findContentChildren</span><span class="params">(vector&lt;<span class="type">int</span>&gt; &amp;g, vector&lt;<span class="type">int</span>&gt; &amp;s)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(g.<span class="built_in">begin</span>(), g.<span class="built_in">end</span>());                             <span class="comment">//数组g，s排序</span></span><br><span class="line">        <span class="built_in">sort</span>(s.<span class="built_in">begin</span>(), s.<span class="built_in">end</span>());</span><br><span class="line">        <span class="type">int</span> j = <span class="number">0</span>, cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); i++) &#123;                  </span><br><span class="line">            <span class="keyword">if</span> (j &lt; g.<span class="built_in">size</span>() &amp;&amp; g[j] &lt;= s[i]) &#123;               <span class="comment">//这里其实cnt可以代替j工作</span></span><br><span class="line">                j++;                                          <span class="comment">//为了与思路对应就加了j变量</span></span><br><span class="line">                cnt++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;LeetCode_455.分发饼干
+原题链接：https://leetcode.cn/problems/assign-cookies/</summary>
     
     
     
