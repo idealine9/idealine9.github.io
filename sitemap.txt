@@ -7,6 +7,6 @@ https://idealine9.github.io/tags/index.html
 https://idealine9.github.io/
 https://idealine9.github.io/tags/%E7%AE%97%E6%B3%95/
 https://idealine9.github.io/tags/%E6%95%B0%E5%AD%A6/
-https://idealine9.github.io/categories/LeetCode%E9%A2%98%E8%A7%A3/
 https://idealine9.github.io/categories/%E7%AE%97%E6%B3%95%E6%8A%80%E5%B7%A7/
+https://idealine9.github.io/categories/LeetCode%E9%A2%98%E8%A7%A3/
 https://idealine9.github.io/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/
