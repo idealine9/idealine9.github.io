@@ -10,7 +10,7 @@
   hexoVersion: '6.3.0'
 } </script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="idealine的博客" type="application/atom+xml">
 </head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="false"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s2.loli.net/2023/09/01/gRrWunDCmxeHodX.jpg"></div><div class="author-info__name text-center">idealine9</div><div class="author-info__description text-center">My wish is to see you, even across the world.</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">3</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">3</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">3</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://s2.loli.net/2023/09/01/8M5ICvsZtrlXFyY.png)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">idealine的博客</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">Arduino Uno驱动12864屏幕</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2023-12-26</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E7%A1%AC%E4%BB%B6%E6%8A%80%E5%B7%A7/">硬件技巧</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">473</span><span class="post-meta__separator">|</span><span>阅读时长: 1 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><blockquote>
-<p>用Arduino Uno驱动12864屏幕，实现简单动画</p>
+<p><strong>用Arduino Uno驱动12864屏幕，实现简单动画</strong></p>
 </blockquote>
 <span id="more"></span>
 <p>参照B站视频：BV1bP41187UF</p>
@@ -25,11 +25,11 @@
 <p>Arduino Uno的<strong>A4</strong>——显示屏的<strong>SDA</strong></p>
 <p>Arduino Uno的<strong>A5</strong>——显示屏的<strong>SCL</strong></p>
 <p><strong>连线图：</strong></p>
-<p><img src="/images/link.png" /></p>
+<p><img src="/images/Arduino_madeline/link.png" /></p>
 <p>​</p>
 <p><strong>Arduino IDE设置</strong></p>
 <p>在Arduino IDE的库管理中查找并安装对应的库，比如用到的U8g2库。</p>
-<p><img src="/images/ide.png" /></p>
+<p><img src="/images/Arduino_madeline/ide.png" /></p>
 <p>接下来打开一个网站：<a
 target="_blank" rel="noopener" href="https://www.photopea.com/">photopea.com</a></p>
 <p>将你想要做成动画的gif或者视频放入里面，分解为单独的帧后以图层的方式导出，记得稍微调整一下导出图层的尺寸。</p>
