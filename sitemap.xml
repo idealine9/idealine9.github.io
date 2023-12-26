@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://idealine9.github.io/posts/Arduino_Uno_12864/</loc>
+    
+    <lastmod>2023-12-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://idealine9.github.io/categories/index.html</loc>
     
     <lastmod>2023-12-26</lastmod>
@@ -47,6 +56,13 @@
 
   
   <url>
+    <loc>https://idealine9.github.io/tags/%E7%A1%AC%E4%BB%B6/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://idealine9.github.io/tags/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -61,6 +77,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://idealine9.github.io/categories/%E7%A1%AC%E4%BB%B6%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://idealine9.github.io/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/</loc>
